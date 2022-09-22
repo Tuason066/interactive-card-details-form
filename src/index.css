@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cardOne-container {
+  @apply absolute top-[13%] right-[4%] w-9/12 xl:top-auto xl:bottom-[27%] xl:left-auto xl:-right-[40%];
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cardOne-text {
+  @apply absolute top-[42.5%] right-[14%] text-white text-cardSM xl:text-cardMD font-medium tracking-widest;
+}
+
+.cardTwo-container {
+  @apply absolute -bottom-[13.75%] left-[4%] w-9/12 xl:bottom-auto xl:top-[27%] xl:left-auto xl:-right-[20%];
+}
+
+.cardTwo-logo {
+  @apply absolute top-[8%] left-[6%] w-[15%];
+}
+
+.cardTwo-number {
+  @apply text-white text-cardMD xl:text-cardLG absolute bottom-[35%] left-[6%] tracking-widest;
+}
+
+.cardTwo-number {
+  @apply uppercase text-white text-cardSM absolute bottom-[12%] left-[6%] xl:tracking-widest;
+}
+
+.cardTwo-date {
+  @apply text-white text-cardSM absolute bottom-[12%] right-[6%] tracking-widest;
 }
