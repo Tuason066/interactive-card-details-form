@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/interactive-card-details-form/static/css/main.20af5a9e.css",
+    "main.js": "/interactive-card-details-form/static/js/main.2bdec066.js",
+    "index.html": "/interactive-card-details-form/index.html",
+    "main.20af5a9e.css.map": "/interactive-card-details-form/static/css/main.20af5a9e.css.map",
+    "main.2bdec066.js.map": "/interactive-card-details-form/static/js/main.2bdec066.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20af5a9e.css",
+    "static/js/main.2bdec066.js"
+  ]
+}
