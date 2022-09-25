@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx,css}', './public/index.html'],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -14,16 +14,19 @@ module.exports = {
         },
       },
       fontFamily: {
-        spaceGrotest: "'Space Grotesk', sans-serif",
+        spaceGrotest: 'Space Grotesk',
       },
       fontSize: {
-        cardSM: 'clamp(1px, 4vw, .75rem)',
-        cardMD: 'clamp(1px, 4.9vw, 1.15rem)',
-        cardLG: 'clamp(1px, 4.9vw, 1.5rem)',
+        xs: 'clamp(1px, 4vw, .65rem)',
+        sm: 'clamp(1px, 4vw, .75rem)',
+        md: 'clamp(1px, 4.9vw, 1.15rem)',
+        lg: 'clamp(1px, 4.9vw, 1.5rem)',
       },
       spacing: {
         formTop: 'clamp(2rem, 20vw, 5rem)',
         formLeft: 'clamp(2rem, 20vw, 5rem)',
+        ty1: 'clamp(1px, 20vw, .3rem)',
+        ty8: 'clamp(1px, 20vw, 2rem)',
       },
     },
   },

@@ -4,30 +4,85 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* CARDS */
+
 .cardOne-container {
   @apply absolute top-[13%] right-[4%] w-9/12 xl:top-auto xl:bottom-[27%] xl:left-auto xl:-right-[40%];
 }
-
 .cardOne-text {
-  @apply absolute top-[42.5%] right-[14%] text-white text-cardSM xl:text-cardMD font-medium tracking-widest;
+  @apply absolute top-[42.5%] right-[14%] text-white text-sm xl:text-md font-medium tracking-widest;
 }
-
 .cardTwo-container {
   @apply absolute -bottom-[13.75%] left-[4%] w-9/12 xl:bottom-auto xl:top-[27%] xl:left-auto xl:-right-[20%];
 }
-
 .cardTwo-logo {
   @apply absolute top-[8%] left-[6%] w-[15%];
 }
-
 .cardTwo-number {
-  @apply text-white text-cardMD xl:text-cardLG absolute bottom-[35%] left-[6%] tracking-widest;
+  @apply text-white text-md xl:text-lg absolute bottom-[35%] left-[6%] tracking-widest;
 }
-
-.cardTwo-number {
-  @apply uppercase text-white text-cardSM absolute bottom-[12%] left-[6%] xl:tracking-widest;
+.cardTwo-name {
+  @apply uppercase text-white text-sm absolute bottom-[12%] left-[6%] xl:tracking-widest;
 }
-
 .cardTwo-date {
-  @apply text-white text-cardSM absolute bottom-[12%] right-[6%] tracking-widest;
+  @apply text-white text-sm absolute bottom-[12%] right-[6%] tracking-widest;
+}
+
+/* FORM */
+
+.form {
+  @apply pt-formTop pb-10 xl:flex xl:flex-col xl:items-center xl:justify-center xl:pl-72 xl:max-w-[650px];
+}
+
+.form-label {
+  @apply text-violet-300 uppercase tracking-widest text-sm pb-1 block font-medium;
+}
+
+/* .form-input {
+  @apply w-full px-[1em] py-[.5em] text-violet-200 tracking-wider border-none outline-none bg-transparent;
+}
+
+.input-wrapper {
+  @apply border-2 rounded text-md;
+}
+ */
+
+.input-wrapper {
+  @apply rounded text-md;
+}
+
+.form-input {
+  @apply w-full px-[1em] py-[.5em] text-violet-200 tracking-wider outline-none bg-white rounded  border-2 border-violet-100;
+}
+
+.form-input-err {
+  @apply w-full px-[1em] py-[.5em] text-violet-200 tracking-wider outline-none bg-white rounded  border-2 border-red;
+}
+
+.form-input:focus {
+  @apply border-none;
+}
+
+.input-wrapper:has(.form-input:focus) {
+  @apply bg-gradient-to-r from-[#6448fe] to-[#600594] p-[2px];
+}
+
+.error {
+  @apply text-xs text-red mt-1;
+}
+
+.primary-btn {
+  @apply capitalize bg-violet-300 text-md text-white block w-11/12 mx-auto py-[.5em] rounded-md;
 }
